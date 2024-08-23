@@ -14,8 +14,16 @@
 
 }
 
+::selection{
+
+    background-color: var(--color4);
+    color: var(--background);
+}
+
 *{
     font-family: var(--main-font);
+
+
 }
 
 body{

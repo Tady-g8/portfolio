@@ -1,0 +1,107 @@
+h2{
+    color: var(--color1);
+    padding-left: 10rem;
+    padding-top: 7.5rem;
+    font-size: 5rem;
+    line-height: 7.5rem;
+    font-weight: 400;
+    /* border: 1px solid black; */
+}
+
+.colorText{
+    color: var(--color4);
+}
+
+.desc{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.boxes{
+
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    height: 40rem;
+
+    /* border: 1px solid black; */
+    padding-left: 25%;
+}
+
+.box1{
+    width: 25rem;
+    margin: 0 auto;
+    margin-top: 7.5rem;
+    height: 25rem;   
+
+    border: 1px dashed black;
+    position: absolute;
+    z-index: -1;
+
+    animation: rotate 60s infinite linear;
+}
+
+.box2{
+    width: 25rem;
+    margin: 0 auto;
+    margin-top: 7.5rem;
+    height: 25rem;   
+
+    border: 1px solid #D9D9D9;
+    background-color: #D9D9D9;
+    position: absolute;
+    z-index: 0;
+
+    animation: rotateReverse 60s infinite ease;
+}
+
+.box3{
+    width: 25rem;
+    margin: 0 auto;
+    margin-top: 7.5rem;
+    height: 25rem;   
+
+    border: 2px solid var(--color4);
+    background-color: var(--background);
+    position: absolute;
+    z-index: 1;
+
+    animation: rotateReverse 120s infinite linear;
+}
+
+.message{
+    width: 25rem;
+    margin: 0 auto;
+    margin-top: 19.5rem;
+    height: 25rem;   
+    position: absolute;
+    /* line-height: 5rem; */
+
+    text-align: center;
+    z-index: 2;
+}
+
+@keyframes rotate {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(90deg); }
+    50%  { transform: rotate(180deg); }
+    75%  { transform: rotate(270deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes rotateReverse {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(-90deg); }
+    50%  { transform: rotate(-180deg); }
+    75%  { transform: rotate(-270deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+@keyframes rotateReverse1 {
+    0%   { transform: rotate(5deg); }
+    25%  { transform: rotate(-85deg); }
+    50%  { transform: rotate(-175deg); }
+    75%  { transform: rotate(-265deg); }
+    100% { transform: rotate(-355deg); }
+}
