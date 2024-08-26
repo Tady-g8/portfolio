@@ -1,4 +1,5 @@
 import './css/desc.css'
+import NextButton from './nextButton';
 
 export default function Desc() {
     
@@ -20,17 +21,23 @@ export default function Desc() {
     ];
 
     return (
-        <div className="desc">
+        <>
+            <div className="desc">
 
-            <h2><span className='colorText'>Front-end</span> <br /> developer <br /> portfolio</h2>
-            
-            <div className="boxes">
-                <div className="box1"></div>
-                <div className="box2"></div>
-                <div className="box3"></div>
-                <h3 className='message'>{words[Math.floor(Math.random() * words.length)]}</h3>
+                <h2><span className='colorText'>Front-end</span> <br /> developer <br /> portfolio</h2>
+                
+                <div className="boxes">
+                    <div className="box1"></div>
+                    <div className="box2"></div>
+                    <div className="box3"></div>
+                    <h3 className='message'>{words[Math.floor(Math.random() * words.length)]}</h3>
+                </div>
+
             </div>
 
-        </div>
+            <div className="nextButtonDiv">
+                <NextButton part="about" />
+            </div>
+        </>
     )
 }

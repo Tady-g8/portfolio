@@ -1,0 +1,10 @@
+.nextButton{
+    width: 5rem;
+    height: 2.5rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: grid;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 3rem;
+}
