@@ -2,6 +2,10 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: 2px solid var(--color3);
+    position: sticky;
+    top: 0;
+    background-color: var(--background);
+    z-index: 5;
 }
 
 h1{

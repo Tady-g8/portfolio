@@ -22,7 +22,7 @@ export default function Desc() {
 
     return (
         <>
-            <div className="desc">
+            <div className="desc" id="desc">
 
                 <h2><span className='colorText'>Front-end</span> <br /> developer <br /> portfolio</h2>
                 

@@ -2,7 +2,7 @@ import './css/header.css'
 
 export default function Header() {
     return (
-        <header>
+        <header id="header">
             <h1>Tadej Gungl</h1>
             <nav>
                 <ul>
